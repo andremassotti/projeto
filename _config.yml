@@ -53,3 +53,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  staff_members:
+    people: true
+    permalink: /staff_members/:path/
