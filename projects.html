@@ -1,0 +1,11 @@
+---
+title: Projects
+layout: default
+---
+
+{% for page in site.projects reversed %}
+	<li><a href="{{ site.baseurl }}{{ page.url }}">
+	{{page.title}}</a></li>
+	<img src="{{site.baseurl}}/assets/img/{{page.image}}" alt="Andre">
+
+{% endfor %}
