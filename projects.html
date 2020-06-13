@@ -1,11 +1,14 @@
 ---
-title: Projects
+title: projects
 layout: default
 ---
 
-{% for page in site.projects reversed %}
-	<li><a href="{{ site.baseurl }}{{ page.url }}">
-	{{page.title}}
-	<img src="{{site.baseurl}}/assets/img/{{page.image}}" alt="{{ page.title }}"></a></li>
-
-{% endfor %}
+<div class="grid-container">
+	{% for page in site.projects reversed %}
+		<div class="grid-projects">
+			<a href="{{ site.baseurl }}{{ page.url }}">
+			{{page.title}}
+			<img src="{{site.baseurl}}/assets/img/{{page.image}}" alt="{{ page.title }}"></a>
+		</div>
+	{% endfor %}
+</div>
