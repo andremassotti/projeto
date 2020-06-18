@@ -26,6 +26,14 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+
+scrollbar-width: none;
+  -ms-overflow-style: none;
+
+}
+
+body::-webkit-scrollbar {
+display: none;
 }
 
 p {
@@ -35,6 +43,10 @@ p {
 
 h1, h2, h3 {
   text-align: center;
+}
+
+.about-work, .extra-info, .acess {
+  text-align: left;
 }
 
 
@@ -150,7 +162,7 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($color-3, 15%);
+    color: $color-1;
   }
 
   &:hover {
@@ -235,10 +247,10 @@ pre {
 }
 
 
+/* deletei rever
 
-/**
- * Clearfix
- */
+Clearfix
+
 %clearfix:after {
   content: "";
   display: table;
@@ -247,9 +259,9 @@ pre {
 
 
 
-/**
- * Icons
- */
+
+ Icons
+
 
 .svg-icon {
     width: 16px;
@@ -266,11 +278,9 @@ pre {
   }
 }
 
-
-
-/**
- * Tables
  */
+
+/* DELETEI REVER
 table {
   margin-bottom: $spacing-unit;
   width: 100%;
@@ -294,4 +304,4 @@ table {
   td {
     border: 1px solid $grey-color-light;
   }
-}
+}*/

@@ -8,7 +8,9 @@ layout: default
 		<div class="grid-projects">
 			<a href="{{ site.baseurl }}{{ page.url }}">
 			{{page.title}}
-			<img src="{{site.baseurl}}/assets/img/{{page.image}}" alt="{{ page.title }}"></a>
+				<div class="projects-img">
+					<img src="{{site.baseurl}}/assets/img/{{page.image}}" alt="{{ page.title }}"></a>
+				</div>
 		</div>
 	{% endfor %}
 </div>
