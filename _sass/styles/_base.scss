@@ -15,7 +15,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
+  color: $color-3;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -157,8 +157,8 @@ h4, h5, h6 {
 /**
  * Links
  */
-a {
-  color: $color-3;
+a, a.page-link:hover {
+  color: $color-1;
   text-decoration: none;
 
   &:visited {
@@ -166,8 +166,7 @@ a {
   }
 
   &:hover {
-    color: $text-color;
-    text-decoration: underline;
+    color: $color-2;
   }
 
   .social-media-list &:hover {
@@ -178,7 +177,6 @@ a {
     }
   }
 }
-
 
 /**
  * Blockquotes
