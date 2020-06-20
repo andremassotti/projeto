@@ -14,21 +14,21 @@ body {
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
   font-kerning: normal;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 
-scrollbar-width: none;
+  scrollbar-width: none;
   -ms-overflow-style: none;
 
 }
 
 body::-webkit-scrollbar {
-display: none;
+  display: none;
 }
 
 
