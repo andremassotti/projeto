@@ -1,16 +1,39 @@
 @charset "utf-8";
 
-// Define defaults for each variable.
-
 $regular-font-family: "Raleway", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-/* font size */
+/* Font size */
 $font-size-1: 16px !default;
 $regular-font-weight: 400 !default;
 $bold-font-weight: 700 !default;
 $base-line-height: 1.5 !default;
 
-/* mixins for titles */
+/* Paragraph spaces */
+
+$paragraph-1: 24px;
+$paragraph-2: 8px;
+
+$spacing-unit:     30px !default;
+
+$background-color: #fdfdfd !default;
+$brand-color:      #2a7ae2 !default;
+
+/* Colors */
+$color-1: #845EC2;
+$color-2: #C493FF;
+$color-3: #4f4f4f;
+$color-4: #FBFBFB;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-mobile:          320px !default;
+$on-tablet:          800px !default;
+$on-desktop:        1440px !default;
+
+/* Mixins for titles */
 
 @mixin title-type {
 	font-size: $font-size-1 *2;
@@ -32,31 +55,6 @@ $base-line-height: 1.5 !default;
 	color: $color-2;
 	margin-top: $paragraph-1;
 }
-
-/* paragraph spaces */
-
-$paragraph-1: 24px;
-$paragraph-2: 8px;
-
-$spacing-unit:     30px !default;
-
-$background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
-
-/* colors */
-$color-1: #845EC2;
-$color-2: #C493FF;
-$color-3: #4f4f4f;
-$color-4: #FBFBFB;
-
-$table-text-align: left !default;
-
-// Width of the content area
-$content-width:    800px !default;
-
-$on-mobile:          320px !default;
-$on-tablet:          800px !default;
-$on-desktop:        1440px !default;
 
 
 @mixin media-query($device) {

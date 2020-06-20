@@ -1,6 +1,4 @@
-/**
- * Reset some basic elements
- */
+/* Reset */
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -9,10 +7,7 @@ dl, dd, ol, ul, figure {
 }
 
 
-
-/**
- * Basic styling
- */
+/* Basic styling */
 body {
   font: $regular-font-weight #{$font-size-1}/#{$base-line-height} $regular-font-family;
   color: $color-3;
@@ -36,26 +31,18 @@ body::-webkit-scrollbar {
 display: none;
 }
 
-p {
-
-  text-align: center;
-}
 
 h1, h2, h3 {
   text-align: center;
 }
 
+p {
 
-/* ORGANIZAR POSIÇAO */
-.about-work, .extra-info, .acess {
-  text-align: left;
+  text-align: center;
 }
 
 
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
+/* Vertical rhythm */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
@@ -64,35 +51,16 @@ ul, ol, dl, figure,
 }
 
 
-
-/**
- * `main` element
- */
+/*`main` element */
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
 
-
-/**
- * Images
- */
+/* Images */
 img {
   max-width: 100%;
   vertical-align: middle;
-}
-
-/* about */
-
-.institution {
-  font-weight: $bold-font-weight;
-  margin-top: $paragraph-2;
-  margin-bottom: $paragraph-2;
-}
-
-.description, .year-cv {
-  color: $color-3;
-  line-height: 20px;
 }
 
 
@@ -115,10 +83,7 @@ h4, h5, h6 {
 }
 
 
-
-/**
- * Links
- */
+/* Links */
 a, a.page-link:hover {
   color: $color-1;
   text-decoration: none;
@@ -141,9 +106,7 @@ a, a.page-link:hover {
 }
 
 
-/**
- * Wrapper
- */
+/* Wrapper */
 .wrapper {
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));

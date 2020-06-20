@@ -1,7 +1,7 @@
-/* font */
+/* Font */
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
-/* background color */
+/* Background color */
 
 body {
   background-color: $color-4;
@@ -119,9 +119,7 @@ body {
   margin-bottom: 15px;
 }
 
-/**
- * Page content
- */
+/* Page content */
 .page-content {
   padding-top: $spacing-unit *4;
   flex: 1;
@@ -178,47 +176,31 @@ body {
   }
 }
 
-/* projects grid */
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 50px;
-    
+/* Gif home */
 
-   @include media-query($on-mobile) {
-    grid-template-columns: 100%;
-
-   }
+.hello-home {
+width: 500px;
 }
 
-  .grid-projects {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
+.hello {
+  text-align: center;
+}
 
-  .img-project {
-    display: block;
-    width: 80%;
-    height: auto;
-  }
+ /* About */
 
-  /* grid animation */
+.institution {
+  font-weight: $bold-font-weight;
+  margin-top: $paragraph-2;
+  margin-bottom: $paragraph-2;
+}
 
-  .projects-img {
-    position: relative;
-    margin-top: 10px;
-    overflow: hidden;
-  }
-  .grid-projects img {
-    transition: transform 2s;
-  }
+.description, .year-cv {
+  color: $color-3;
+  line-height: 20px;
+}
 
-  .grid-projects img:hover {
-    transform: scale(1.1);
-  }
-
-/* contact flexbox & animation */
+/* Contact flexbox & animation */
 
 .container-1 {
   display: flex;
@@ -267,20 +249,54 @@ body {
 }
 
 
-/* image distance in project page */
+/*  Projects grid and projects pages */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 50px;
+    
+
+   @include media-query($on-mobile) {
+    grid-template-columns: 100%;
+
+   }
+}
+
+  .grid-projects {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .img-project {
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+
+  /* Grid animation in projects page */
+
+  .projects-img {
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  .grid-projects img {
+    transition: transform 2s;
+  }
+
+  .grid-projects img:hover {
+    transform: scale(1.1);
+  }
+
+
+/* Image distance in project page */
 .about-work {
   margin-top: 20px;
 }
 
-
-/* gif home */
-
-.hello-home {
-width: 500px;
-}
-
-.hello {
-  text-align: center;
+.about-work, .extra-info, .acess {
+  text-align: left;
 }
 
 .project-link {
